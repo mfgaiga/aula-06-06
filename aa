@@ -1,0 +1,38 @@
+import tkinter as tk    #Tkinter é uma biblioteca Python que permite a criação de interfaces gráficas de usuário (GUIs)
+import random           # random é um módulo que fornece funções para gerar números pseudoaleatórios e realizar operações aleatórias. Ele é essencial para diversos contextos, como jogos, simulações, testes e criptografi
+from PIL import Image, ImageTk #PIL é uma biblioteca Python que fornece recursos para manipulação de imagens. Ela permite abrir, editar, salvar e criar imagens em diversos formatos, como JPEG, PNG, BMP, entre outros. 
+ 
+# função iniciar jogo
+
+def iniciar_jogo():
+    global numero_secreto, tentativas
+    numero_secreto = random.randint(1,10) #voce ira usar o random para ser um numero aleatorio #randint em Python é uma função que pertence ao módulo random e serve para gerar números inteiros aleatórios dentro de um intervalo especificado. Essa função recebe dois argumentos, a e b, que definem o limite inferior e superior do intervalo, respectivamente. A função retorna um inteiro aleatório N, tal que a <= N <= b. É um alias para randrange(a, b+1), o que significa que o limite superior é inclusivo. 
+    tentativas = 0
+   # resultado["text"] = ""
+    
+def verificar_resultado(): #
+    pass 
+
+def incluir_imagem(): #
+    pass
+
+#intergace grafica
+            #voce ira usar a biblioteca do tk agora
+tela_jogo = tk.Tk() #agora voce ira chamar a tela ira aparecer uma tela em branco
+tela_jogo.title(" Jogo ad Adivinhação da sala 10") # quando voce ira parecer o titulo voce ira usar title
+tela_jogo.geometry("400x500") #voce ira usar o geometry se voce quiser alterar a altura e a largura  da tela
+tela_jogo.configure(background='light blue') # voce ira usar o background para voce mudar a cor do fudo da tela
+
+instrucao = tk.Label(tela_jogo,text='adivinhe um numero de 1 a 10',#se voce quiser colocar o titulo dentro da tela aparecendo o titulo
+                     font=('comic sans MS', 15),background='light blue' ) #se voce quiser almentar a tela as letras do titulo #se voce quiser mudar a cor do fundo para nao ficar branco voce usa background
+instrucao.pack(pady=10)
+
+nome_jogardor = tk.Label(tela_jogo,text= 'Informe seu nome', front=('')) #voce ira adicionar outro texto em sua tela 
+nome_jogardor.pack(pady=15)
+
+entrada_nome = tk.Entry(tela_jogo,justify="center",backgrond='blue')
+                        font=('arial',14)
+entrada_nome.pack(pady=5)
+
+entrada = tk.Entry
+tela_jogo.mainloop()
