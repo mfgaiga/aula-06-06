@@ -6,7 +6,7 @@ from PIL import Image, ImageTk #PIL é uma biblioteca Python que fornece recurso
 
 def iniciar_jogo():
     global numero_secreto, tentativas
-    numero_secreto = random.randint(1,10) #voce ira usar o random para ser um numero aleatorio #randint em Python é uma função que pertence ao módulo random e serve para gerar números inteiros aleatórios dentro de um intervalo especificado. Essa função recebe dois argumentos, a e b, que definem o limite inferior e superior do intervalo, respectivamente. A função retorna um inteiro aleatório N, tal que a <= N <= b. É um alias para randrange(a, b+1), o que significa que o limite superior é inclusivo. 
+    numero_secreto = random.randint(1,10) #voce ira usar o random para ser um numero aleatorio e sera entre o 1, 10 algum numero dentro deles podendo ser 6 etc nao pode ser menor do que 1 e nao pode ser maior que 10 #randint em Python é uma função que pertence ao módulo random e serve para gerar números inteiros aleatórios dentro de um intervalo especificado. Essa função recebe dois argumentos, a e b, que definem o limite inferior e superior do intervalo, respectivamente. A função retorna um inteiro aleatório N, tal que a <= N <= b. É um alias para randrange(a, b+1), o que significa que o limite superior é inclusivo. 
     tentativas = 0
    # resultado["text"] = ""
     
